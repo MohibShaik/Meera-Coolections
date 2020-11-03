@@ -1,0 +1,122 @@
+mat-toolbar {
+  background: #54e4d3;
+  border-bottom: 2px solid #474747;
+  box-shadow: 0px 3px 6px #00000029;
+  position: relative;
+  z-index: 10;
+  mat-toolbar-row {
+    padding: 0 32px;
+
+    .mat-icon-button {
+      box-shadow: none;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      color: #191919;
+    }
+
+    .app-title {
+      color: #191919;
+      font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+      font-size: 1.1rem;
+      font-weight: normal;
+      > span {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+    }
+
+    .toolbar-spacer {
+      flex: 1 1 auto;
+    }
+    .line-separator {
+      height: 20px;
+      margin: 0 30px !important;
+      border-right: 1px solid #191919;
+    }
+
+    .user-icon {
+      margin-right: 10px;
+      width: 25px;
+      height: 25px;
+    }
+
+    .account-container {
+      display: flex;
+      flex-direction: column;
+      line-height: 15px;
+      margin-right: 20px;
+
+      > .user-name {
+        font-size: 0.9375rem;
+        font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+        color: #191919;
+      }
+    }
+    .expand-more-icon {
+      color: #191919;
+      cursor: pointer;
+    }
+  }
+}
+
+.header-title {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: #128c7e;
+}
+
+.active-link {
+  font-weight: 600 !important;
+  color: #128c7e !important ;
+}
+
+.logout-container {
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+  font-size: 0.9375rem;
+  .user-email {
+    padding: 7px;
+  }
+
+  .logout-action {
+    padding: 0.333333em;
+    cursor: pointer;
+  }
+}
+
+.sidenav-main {
+  padding: 70px 30px 0;
+  .f-header {
+    margin-bottom: 1.565em;
+    padding: 0.5195rem 0.625rem;
+    font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+    font-size: 1.321em;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 0.25rem;
+
+    > .a {
+      margin: 0;
+      font-weight: normal;
+      font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+      font-size: 1.0625rem;
+    }
+  }
+}
+#cart-icon {
+  margin-left: 30px !important;
+}

@@ -1,0 +1,45 @@
+<div class="catalog-container">
+    <div class="subhead">
+
+        <mat-form-field class="selection-drop-down">
+            <mat-label>Filters</mat-label>
+            <mat-select disableOptionCentering panelClass="testClass" (selectionChange)="onFilterSelection($event)">
+                <mat-option *ngFor="let item of filterItems" [value]="item.value">
+                    {{ item.viewValue }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <button mat-raised-button class="addBookBtn" (click)='addBook()'>
+            <mat-icon>add</mat-icon>
+            Add Book
+        </button>
+    </div>
+
+    <div *ngIf="books" class="catalog-list">
+
+        <mat-card *ngFor="let book of filteredBooks">
+            <mat-card-header> </mat-card-header>
+            <img mat-card-image [src]="book.image" alt="Photo of a book" />
+            <mat-card-content>
+                <p>
+                    <a>{{ book.title }}</a>
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button>
+                    <i class="material-icons">add_shopping_cart</i>
+                </button>
+                <button mat-button (click)="openBookDetails(book)">
+                    <mat-icon class="material-icons">search</mat-icon>
+                </button>
+                <button mat-button (click)="removeBook(book)">
+                    <mat-icon class="material-icons">delete</mat-icon>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+
+
+    </div>
+
+</div>

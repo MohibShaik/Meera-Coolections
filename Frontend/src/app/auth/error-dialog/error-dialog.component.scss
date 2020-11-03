@@ -1,0 +1,20 @@
+.dialog-container {
+    .mat-dialog-content {
+        padding-left: 25px !important;
+    }
+
+    .mat-dialog-actions {
+        padding-left: 125px;
+        padding-top: 25px;
+    }
+    button {
+        line-height: normal;
+        width: 50px;
+        height: 28px;
+        text-align: center;
+        padding: 5px;
+        color: white;
+        cursor: pointer;
+        background: #128c7e;
+    }
+}

@@ -1,0 +1,37 @@
+<div class="hero">
+    <mat-card class="login-card">
+        <mat-card-header>
+            <mat-card-title>
+                <span>S</span>IGNZY <span>K</span>INDLE
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form novalidate [formGroup]="signInForm" (ngSubmit)="submit()">
+                <div class="wrapper">
+                    <mat-form-field class="email-field">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email" [formControl]='signInForm.controls.email'>
+                        <span matPrefix class="email-icon">
+                            <mat-icon svgIcon="user"></mat-icon>
+                        </span>
+                        <mat-error *ngIf="signInForm.controls.email.errors">
+                            {{signInForm.controls.email.errors.required.message}}</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="password-field">
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password" [formControl]='signInForm.controls.password'>
+                        <span matPrefix class="password-icon">
+                            <mat-icon svgIcon="password"></mat-icon>
+                        </span>
+                        <mat-error *ngIf="signInForm.controls.password.errors">
+                            {{signInForm.controls.password.errors.required.message}}</mat-error>
+                    </mat-form-field>
+
+                    <button mat-raised-button>Sign In</button>
+                </div>
+            </form>
+        </mat-card-content>
+
+    </mat-card>
+</div>
