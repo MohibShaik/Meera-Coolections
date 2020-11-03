@@ -8,9 +8,10 @@ import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
-  declarations: [LoginComponent, ErrorDialogComponent, SplashScreenComponent],
+  declarations: [LoginComponent, ErrorDialogComponent, SplashScreenComponent, SignupComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,

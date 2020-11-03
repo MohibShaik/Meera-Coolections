@@ -1,12 +1,10 @@
 <div class="hero">
     <div class="navbar">
-        <!-- <h2 class="brand">Meera</h2> -->
-        <button mat-raised-button>Sign Up</button>
+        <button mat-raised-button (click)='navigateToSignUp()'>Sign Up</button>
     </div>
     <div class="content">
-        <small>Welcome to</small>
+        <small class='welcome'>Welcome to</small>
         <h1>Meera <br> Collections</h1>
-        <button mat-raised-button>Sign In</button>
-
+        <button mat-raised-button (click)='navigateToSignIn()'>Sign In</button>
     </div>
 </div>
